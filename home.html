@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="box">
+      <form >
+        <input type="text" class="search" placeholder="Enter the city name...">
+        <button type="submit" id="searchIcon"><i class="fas fa-search"></i></button>
+
+      </form>
+      <div class="wave -one"></div>
+      <div class="wave -two"></div>
+      <div class="wave -three"></div>
+
+      <div id="weathercon">
+        <i class="fas fa-sun" style="color: #eccc68"></i>
+      </div>
+
+      <div class="info">
+        <h2 class="location" id="location"><i class="fas fa-street-view"></i>Guwahti|IN</h2>
+        <p id="date">THUR | JUN 10 | 03:50 PM</p>
+        <h1 class="temp" id="temp">25 <sup>o</sup> C</h1>
+        <h3 class="tempmin_max"><span id="tempmax">
+          Max 29 </span> <sup>o</sup> C | <span id="tempmin"> Min 23 </span> <sup>o</sup> C
+        </h3>
+      </div>
+    </div>
+
+    
+  <script src="env.js" type="module"></script>
+  <script src="main.js" type="module"></script>
+
+  </body>
+</html>
